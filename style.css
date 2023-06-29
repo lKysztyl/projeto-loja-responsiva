@@ -375,7 +375,18 @@ footer > section > article > ul > li > a:hover {
     padding: 0 3rem;
 }
 
+.btn-move {
+    width: 3rem;
+    height: 3rem;
+    background-color: #19110B;
+    color: #ffffff;
+    cursor: pointer;
+    position: fixed;
+    top: 85%;
+    left: 95%;
+    border-radius: 50%;
 
+}
 
 
 
@@ -467,6 +478,19 @@ footer > section > article > ul > li > a:hover {
         transition: all 0.3s;
         background-color: #19110B;
         color: #ffffff;
+    }
+
+    .btn-move {
+        width: 3rem;
+        height: 3rem;
+        background-color: #19110B;
+        color: #ffffff;
+        cursor: pointer;
+        position: fixed;
+        top: 85%;
+        left: 85%;
+        border-radius: 50%;
+    
     }
 }
 

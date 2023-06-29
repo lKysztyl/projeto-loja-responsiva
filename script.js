@@ -71,7 +71,7 @@ $(document).ready(function() {
     // Randomizando os preços.
     $('.store > ul > li').each(function() {
         const randomNumber = Math.floor(Math.random() * 9700);
-        
+
         const brl = randomNumber.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         $(this).find('.price').append(brl);
     });
@@ -82,5 +82,18 @@ $(document).ready(function() {
         });
     }
 
+    const btnMove = document.createElement('button')
+    btnMove.setAttribute('type', 'button');
+    btnMove.textContent = 'Top';
+    btnMove.classList.add('btn-move');
+    $('.wrapper').append(btnMove);
+
+    $('.btn-move').click(function() {
+        const header = $('header');
+        
+        $('html').animate({
+            scrollTop: header.offset().top
+        }, 1000)
+    });
 
 });
